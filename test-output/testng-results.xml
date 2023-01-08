@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-07T23:54:44 PST" name="TestNGBasic" finished-at="2023-01-07T23:56:18 PST" duration-ms="94142">
+    <groups>
+    </groups>
+    <test started-at="2023-01-07T23:54:44 PST" name="ChromeTesting" finished-at="2023-01-07T23:56:18 PST" duration-ms="94142">
+      <class name="com.grid.docker.BrowserTestUsingGridDocker">
+        <test-method signature="remoteEdgeDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@52bf72b5]" started-at="2023-01-07T23:54:44 PST" name="remoteEdgeDriverTest" finished-at="2023-01-07T23:56:18 PST" duration-ms="94103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remoteEdgeDriverTest -->
+        <test-method signature="remoteChromeDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@52bf72b5]" started-at="2023-01-07T23:54:44 PST" name="remoteChromeDriverTest" finished-at="2023-01-07T23:55:04 PST" duration-ms="20233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remoteChromeDriverTest -->
+        <test-method signature="remoteFirefoxDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@52bf72b5]" started-at="2023-01-07T23:54:44 PST" name="remoteFirefoxDriverTest" finished-at="2023-01-07T23:55:31 PST" duration-ms="46956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- remoteFirefoxDriverTest -->
+      </class> <!-- com.grid.docker.BrowserTestUsingGridDocker -->
+    </test> <!-- ChromeTesting -->
+  </suite> <!-- TestNGBasic -->
+</testng-results>
