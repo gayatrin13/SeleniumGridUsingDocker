@@ -81,6 +81,6 @@ public class BrowserTestUsingGridDocker {
 
 	@AfterSuite
 	public void tearDownGrid() {
-		getDriver().close();
+		getDriver().quit();
 	}
 }
