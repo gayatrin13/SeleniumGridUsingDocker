@@ -2,23 +2,58 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-07T23:54:44 PST" name="TestNGBasic" finished-at="2023-01-07T23:56:18 PST" duration-ms="94142">
+  <suite started-at="2023-01-10T18:21:13 PST" name="TestNGBasic" finished-at="2023-01-10T18:21:55 PST" duration-ms="42160">
     <groups>
     </groups>
-    <test started-at="2023-01-07T23:54:44 PST" name="ChromeTesting" finished-at="2023-01-07T23:56:18 PST" duration-ms="94142">
+    <test started-at="2023-01-10T18:21:13 PST" name="ChromeTesting" finished-at="2023-01-10T18:21:55 PST" duration-ms="42160">
       <class name="com.grid.docker.BrowserTestUsingGridDocker">
-        <test-method signature="remoteEdgeDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@52bf72b5]" started-at="2023-01-07T23:54:44 PST" name="remoteEdgeDriverTest" finished-at="2023-01-07T23:56:18 PST" duration-ms="94103" status="PASS">
+        <test-method is-config="true" signature="setUpGrid()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@4135c3b]" started-at="2023-01-10T18:21:13 PST" name="setUpGrid" finished-at="2023-01-10T18:21:13 PST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpGrid -->
+        <test-method signature="remoteEdgeDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@4135c3b]" started-at="2023-01-10T18:21:13 PST" name="remoteEdgeDriverTest" finished-at="2023-01-10T18:21:55 PST" duration-ms="42133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- remoteEdgeDriverTest -->
-        <test-method signature="remoteChromeDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@52bf72b5]" started-at="2023-01-07T23:54:44 PST" name="remoteChromeDriverTest" finished-at="2023-01-07T23:55:04 PST" duration-ms="20233" status="PASS">
+        <test-method signature="remoteChromeDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@4135c3b]" started-at="2023-01-10T18:21:13 PST" name="remoteChromeDriverTest" finished-at="2023-01-10T18:21:42 PST" duration-ms="28860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- remoteChromeDriverTest -->
-        <test-method signature="remoteFirefoxDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@52bf72b5]" started-at="2023-01-07T23:54:44 PST" name="remoteFirefoxDriverTest" finished-at="2023-01-07T23:55:31 PST" duration-ms="46956" status="PASS">
+        <test-method signature="remoteFirefoxDriverTest()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@4135c3b]" started-at="2023-01-10T18:21:13 PST" name="remoteFirefoxDriverTest" finished-at="2023-01-10T18:21:36 PST" duration-ms="23036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- remoteFirefoxDriverTest -->
+        <test-method is-config="true" signature="tearDownGrid()[pri:0, instance:com.grid.docker.BrowserTestUsingGridDocker@4135c3b]" started-at="2023-01-10T18:21:55 PST" name="tearDownGrid" finished-at="2023-01-10T18:21:55 PST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because the return value of "com.grid.docker.BrowserTestUsingGridDocker.getDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because the return value of "com.grid.docker.BrowserTestUsingGridDocker.getDriver()" is null
+at com.grid.docker.BrowserTestUsingGridDocker.tearDownGrid(BrowserTestUsingGridDocker.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:400)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownGrid -->
       </class> <!-- com.grid.docker.BrowserTestUsingGridDocker -->
     </test> <!-- ChromeTesting -->
   </suite> <!-- TestNGBasic -->
