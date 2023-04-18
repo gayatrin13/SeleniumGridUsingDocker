@@ -19,8 +19,8 @@ public class BrowserTestUsingGridDocker {
 	RemoteWebDriver driver;
 
 	/*
-	 * start docker grid thru cmd > D: > docker compose -f docker-compose-grid.yml
-	 * up
+	 * start docker grid thru cmd > D:\docker > docker compose -f
+	 * docker-compose-grid.yml up
 	 * 
 	 * use http://localhost:4444 > sessions : use "secret" pwd to check the running
 	 * application
@@ -80,7 +80,8 @@ public class BrowserTestUsingGridDocker {
 	}
 
 	@AfterSuite
-	public void tearDownGrid() {
+	public void tearDownGrid() throws InterruptedException {
+		Thread.sleep(6000);
 		getDriver().quit();
 	}
 }
