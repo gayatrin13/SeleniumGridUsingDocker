@@ -82,6 +82,6 @@ public class BrowserTestUsingGridDocker {
 	@AfterSuite
 	public void tearDownGrid() throws InterruptedException {
 		Thread.sleep(6000);
-//		getDriver().quit();
+		getDriver().quit();
 	}
 }
